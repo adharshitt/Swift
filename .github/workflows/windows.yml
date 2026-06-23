@@ -11,11 +11,11 @@ jobs:
     name: CLI / LibHB (ARM)
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v4
 
     - name: Cargo-C Toolchain Cache
       id: windows-arm-cargo-c-toolchain
-      uses: actions/cache@v5
+      uses: actions/cache@v4
       with:
         path: |
           ~/.cargo/bin/cargo-capi
@@ -61,13 +61,13 @@ jobs:
         mv hb.dll hb_a64.dll
 
     - name: Upload HandBrakeCLI
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: HandBrakeCLI_ARM64
         path: ./build/HandBrakeCLI.exe
 
     - name: Upload LibHB
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: LibHandBrake_ARM64
         path: ./build/libhb/hb_a64.dll
@@ -76,11 +76,11 @@ jobs:
     name: CLI / LibHB
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v4
 
     - name: Cargo-C Toolchain Cache
       id: windows-cargo-c-toolchain
-      uses: actions/cache@v5
+      uses: actions/cache@v4
       with:
         path: |
           ~/.cargo/bin/cargo-capi
@@ -126,13 +126,13 @@ jobs:
         make pkg.create.zip
 
     - name: Upload HandBrakeCLI
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: HandBrakeCLI
         path: ./build/HandBrakeCLI.exe
 
     - name: Upload LibHB
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: LibHandBrake
         path: ./build/libhb/hb.dll
@@ -145,10 +145,10 @@ jobs:
       SigningCertificate: ${{ secrets.HandBrakeTeam_SignFile }}
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v4
 
     - name: Download LibHandBrake
-      uses: actions/download-artifact@v8
+      uses: actions/download-artifact@v4
       with:
        name: LibHandBrake
        path: win/CS/HandBrakeWPF/bin/publish
@@ -166,7 +166,7 @@ jobs:
         }
 
     - name: Setup .NET 10
-      uses: actions/setup-dotnet@v5
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: "10.0.x"
 
@@ -206,13 +206,13 @@ jobs:
       shell: cmd
 
     - name: Upload HandBrake Installer
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: HandBrake-Win_GUI-x64
         path: win/CS/HandBrakeWPF/bin/HandBrake/HandBrake*.exe
 
     - name: Upload HandBrake ZIP
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: HandBrake-Win_GUI-x64-Zip
         path: win/CS/HandBrakeWPF/bin/*-Win_GUI.zip
@@ -225,10 +225,10 @@ jobs:
       SigningCertificate: ${{ secrets.HandBrakeTeam_SignFile }}
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v4
 
     - name: Download LibHandBrake_ARM64
-      uses: actions/download-artifact@v8
+      uses: actions/download-artifact@v4
       with:
        name: LibHandBrake_ARM64
        path: win/CS/HandBrakeWPF/bin/publish
@@ -246,7 +246,7 @@ jobs:
         }
 
     - name: Setup .NET 10
-      uses: actions/setup-dotnet@v5
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: "10.0.x"
 
@@ -286,13 +286,13 @@ jobs:
       shell: cmd
 
     - name: Upload HandBrake Installer
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: HandBrake-Win_GUI-ARM64
         path: win/CS/HandBrakeWPF/bin/HandBrake/HandBrake*.exe
 
     - name: Upload HandBrake ZIP
-      uses: actions/upload-artifact@v7
+      uses: actions/upload-artifact@v4
       with:
         name: HandBrake-Win_GUI-ARM64-Zip
         path: win/CS/HandBrakeWPF/bin/*-Win_GUI.zip
