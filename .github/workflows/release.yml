@@ -116,12 +116,13 @@ jobs:
         wget -q https://github.com/HandBrake/HandBrake-toolchains/releases/download/1.0/llvm-mingw-20251216-ucrt-ubuntu-22.04-x86_64.tar.xz
         mkdir toolchains
         mv llvm-mingw-20251216-ucrt-ubuntu-22.04-x86_64.tar.xz toolchains/
-        cd toolchains && tar xf llvm-mingw-20251216-ucrt-ubuntu-22.04-x86_64.tar.xz
+        cd toolchains
+        tar xf llvm-mingw-20251216-ucrt-ubuntu-22.04-x86_64.tar.xz
 
     - name: Build HandBrake
       run: |
-        export PATH="${GITHUB_WORKSPACE}/toolchains/llvm-mingw-20251216-ucrt-ubuntu-22.04-x86_64/bin:${PATH}"
-        export PATH=/usr/bin:$PATH
+        export PATH="$GITHUB_WORKSPACE/toolchains/llvm-mingw-20251216-ucrt-ubuntu-22.04-x86_64/bin:$PATH"
+        export PATH="/usr/bin:$PATH"
         ./configure --cross=aarch64-w64-mingw32 --enable-mf --launch-jobs=0 --launch
 
     - name: Prepare Windows ARM64 artifacts
