@@ -39,6 +39,11 @@ jobs:
         rustup target add x86_64-apple-darwin
         xcodebuild -downloadComponent MetalToolchain
 
+    - name: Run macOS Fixes Verification Test
+      run: |
+        clang -framework CoreFoundation -framework CoreVideo -framework CoreMedia test/real_mac_test.c -o test/real_mac_test
+        ./test/real_mac_test
+
     - name: Setup Toolchain
       if: steps.mac-toolchain.outputs.cache-hit != 'true'
       run: |
