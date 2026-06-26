@@ -44,3 +44,7 @@ gtk/missing
 gtk/po/Makevars.template
 gtk/po/*.gmo
 gtk/po/*~
+
+# Private File Analysis folder
+private_file_analysis/
+
