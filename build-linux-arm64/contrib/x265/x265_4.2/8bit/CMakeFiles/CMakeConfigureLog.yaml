@@ -1,0 +1,1203 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      The system is: Linux - 6.18.33.1-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/aarch64-linux-gnu-gcc 
+      Build flags: -I/home/harshit/Swift/build-linux-arm64/contrib/include;-std=gnu99;-fstack-protector-strong;-D_FORTIFY_SOURCE=2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/aarch64-linux-gnu-g++ 
+      Build flags: -I/home/harshit/Swift/build-linux-arm64/contrib/include;-fstack-protector-strong;-D_FORTIFY_SOURCE=2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_50051/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_50051.dir/build.make CMakeFiles/cmTC_50051.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5'
+        Building C object CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o
+        /usr/bin/aarch64-linux-gnu-gcc   -I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_50051.dir/'
+         /usr/libexec/gcc-cross/aarch64-linux-gnu/14/cc1 -quiet -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -imultiarch aarch64-linux-gnu -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_50051.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -std=gnu99 -version -fstack-protector-strong -fasynchronous-unwind-tables -o /tmp/ccceBWAB.s
+        GNU C99 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/harshit/Swift/build-linux-arm64/contrib/include
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/include
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: ba5b759841ff25ab3544f69ae3256e3a
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_50051.dir/'
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/as -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -EL -mabi=lp64 -o CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o /tmp/ccceBWAB.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_50051
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50051.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-L/home/harshit/Swift/build-linux-arm64/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_50051' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_50051.'
+         /usr/libexec/gcc-cross/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgDu9B1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_50051 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o
+        collect2 version 14.2.0
+        /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgDu9B1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_50051 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-L/home/harshit/Swift/build-linux-arm64/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_50051' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_50051.'
+        /usr/bin/aarch64-linux-gnu-gcc -I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong -v -Wl,-v CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o -o cmTC_50051
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/harshit/Swift/build-linux-arm64/contrib/include]
+          add: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/include]
+          add: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/harshit/Swift/build-linux-arm64/contrib/include] ==> [/home/harshit/Swift/build-linux-arm64/contrib/include]
+        collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc-cross/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include] ==> [/usr/aarch64-linux-gnu/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/harshit/Swift/build-linux-arm64/contrib/include;/usr/lib/gcc-cross/aarch64-linux-gnu/14/include;/usr/aarch64-linux-gnu/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_50051/fast]
+        ignore line: [gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_50051.dir/build.make CMakeFiles/cmTC_50051.dir/build]
+        ignore line: [gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-h8uWF5']
+        ignore line: [Building C object CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/aarch64-linux-gnu-gcc   -I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_50051.dir/']
+        ignore line: [ /usr/libexec/gcc-cross/aarch64-linux-gnu/14/cc1 -quiet -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -imultiarch aarch64-linux-gnu -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_50051.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -std=gnu99 -version -fstack-protector-strong -fasynchronous-unwind-tables -o /tmp/ccceBWAB.s]
+        ignore line: [GNU C99 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/harshit/Swift/build-linux-arm64/contrib/include]
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: ba5b759841ff25ab3544f69ae3256e3a]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_50051.dir/']
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/as -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -EL -mabi=lp64 -o CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o /tmp/ccceBWAB.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_50051]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50051.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/aarch64-linux-gnu-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-std=gnu99' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-L/home/harshit/Swift/build-linux-arm64/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_50051' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_50051.']
+        link line: [ /usr/libexec/gcc-cross/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgDu9B1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_50051 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
+          arg [/usr/libexec/gcc-cross/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccgDu9B1.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_50051] ==> ignore
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o]
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o]
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/home/harshit/Swift/build-linux-arm64/contrib/lib] ==> dir [/home/harshit/Swift/build-linux-arm64/contrib/lib]
+          arg [-L/usr/lib/gcc-cross/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib] ==> dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib] ==> dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgDu9B1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_50051 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_50051.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
+        linker tool for 'C': /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld
+        collapse obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o] ==> [/usr/aarch64-linux-gnu/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o] ==> [/usr/aarch64-linux-gnu/lib/crti.o]
+        collapse obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o] ==> [/usr/aarch64-linux-gnu/lib/crtn.o]
+        collapse library dir [/home/harshit/Swift/build-linux-arm64/contrib/lib] ==> [/home/harshit/Swift/build-linux-arm64/contrib/lib]
+        collapse library dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14] ==> [/usr/lib/gcc-cross/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib] ==> [/usr/aarch64-linux-gnu/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib] ==> [/usr/aarch64-linux-gnu/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/aarch64-linux-gnu/lib/Scrt1.o;/usr/aarch64-linux-gnu/lib/crti.o;/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o;/usr/aarch64-linux-gnu/lib/crtn.o]
+        implicit dirs: [/home/harshit/Swift/build-linux-arm64/contrib/lib;/usr/lib/gcc-cross/aarch64-linux-gnu/14;/usr/aarch64-linux-gnu/lib;/lib/aarch64-linux-gnu;/lib;/usr/lib/aarch64-linux-gnu;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a926/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5a926.dir/build.make CMakeFiles/cmTC_5a926.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg'
+        Building CXX object CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/aarch64-linux-gnu-g++   -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/aarch64-linux-gnu-g++
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_5a926.dir/'
+         /usr/libexec/gcc-cross/aarch64-linux-gnu/14/cc1plus -quiet -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -imultiarch aarch64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5a926.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fstack-protector-strong -fasynchronous-unwind-tables -o /tmp/cc9Zb0Bs.s
+        GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/harshit/Swift/build-linux-arm64/contrib/include
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/backward
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/include
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 27f834033fc0e7dc0553fdcfe3d88edc
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_5a926.dir/'
+         /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/as -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -EL -mabi=lp64 -o CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc9Zb0Bs.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5a926
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a926.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/aarch64-linux-gnu-g++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-L/home/harshit/Swift/build-linux-arm64/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_5a926' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_5a926.'
+         /usr/libexec/gcc-cross/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccray3HD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_5a926 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o
+        collect2 version 14.2.0
+        /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccray3HD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_5a926 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-L/home/harshit/Swift/build-linux-arm64/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_5a926' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_5a926.'
+        /usr/bin/aarch64-linux-gnu-g++ -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong -v -Wl,-v CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5a926
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/harshit/Swift/build-linux-arm64/contrib/include]
+          add: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14]
+          add: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu]
+          add: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/backward]
+          add: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/include]
+          add: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/harshit/Swift/build-linux-arm64/contrib/include] ==> [/home/harshit/Swift/build-linux-arm64/contrib/include]
+        collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14] ==> [/usr/aarch64-linux-gnu/include/c++/14]
+        collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu] ==> [/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu]
+        collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/backward] ==> [/usr/aarch64-linux-gnu/include/c++/14/backward]
+        collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc-cross/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include] ==> [/usr/aarch64-linux-gnu/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/harshit/Swift/build-linux-arm64/contrib/include;/usr/aarch64-linux-gnu/include/c++/14;/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu;/usr/aarch64-linux-gnu/include/c++/14/backward;/usr/lib/gcc-cross/aarch64-linux-gnu/14/include;/usr/aarch64-linux-gnu/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a926/fast]
+        ignore line: [gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5a926.dir/build.make CMakeFiles/cmTC_5a926.dir/build]
+        ignore line: [gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-HKY9bg']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/aarch64-linux-gnu-g++   -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/aarch64-linux-gnu-g++]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_5a926.dir/']
+        ignore line: [ /usr/libexec/gcc-cross/aarch64-linux-gnu/14/cc1plus -quiet -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -imultiarch aarch64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5a926.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fstack-protector-strong -fasynchronous-unwind-tables -o /tmp/cc9Zb0Bs.s]
+        ignore line: [GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/harshit/Swift/build-linux-arm64/contrib/include]
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14]
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu]
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include/c++/14/backward]
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 27f834033fc0e7dc0553fdcfe3d88edc]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_5a926.dir/']
+        ignore line: [ /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/as -v -I /home/harshit/Swift/build-linux-arm64/contrib/include -EL -mabi=lp64 -o CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc9Zb0Bs.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5a926]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a926.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/aarch64-linux-gnu-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --includedir=/usr/aarch64-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/14/:/usr/libexec/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/aarch64-linux-gnu/14/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-linux-arm64/contrib/include' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-L/home/harshit/Swift/build-linux-arm64/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_5a926' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_5a926.']
+        link line: [ /usr/libexec/gcc-cross/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccray3HD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_5a926 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
+          arg [/usr/libexec/gcc-cross/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccray3HD.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5a926] ==> ignore
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o]
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o]
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/home/harshit/Swift/build-linux-arm64/contrib/lib] ==> dir [/home/harshit/Swift/build-linux-arm64/contrib/lib]
+          arg [-L/usr/lib/gcc-cross/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib] ==> dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib] ==> dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o] ==> obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld -plugin /usr/libexec/gcc-cross/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc-cross/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccray3HD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_5a926 /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o -L/home/harshit/Swift/build-linux-arm64/contrib/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14 -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib -v CMakeFiles/cmTC_5a926.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o]
+        linker tool for 'CXX': /usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld
+        collapse obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/Scrt1.o] ==> [/usr/aarch64-linux-gnu/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crti.o] ==> [/usr/aarch64-linux-gnu/lib/crti.o]
+        collapse obj [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib/crtn.o] ==> [/usr/aarch64-linux-gnu/lib/crtn.o]
+        collapse library dir [/home/harshit/Swift/build-linux-arm64/contrib/lib] ==> [/home/harshit/Swift/build-linux-arm64/contrib/lib]
+        collapse library dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14] ==> [/usr/lib/gcc-cross/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib/../lib] ==> [/usr/aarch64-linux-gnu/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/lib] ==> [/usr/aarch64-linux-gnu/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/aarch64-linux-gnu/lib/Scrt1.o;/usr/aarch64-linux-gnu/lib/crti.o;/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtendS.o;/usr/aarch64-linux-gnu/lib/crtn.o]
+        implicit dirs: [/home/harshit/Swift/build-linux-arm64/contrib/lib;/usr/lib/gcc-cross/aarch64-linux-gnu/14;/usr/aarch64-linux-gnu/lib;/lib/aarch64-linux-gnu;/lib;/usr/lib/aarch64-linux-gnu;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/lib/gcc-cross/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:239 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "HAVE_INT_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cba55/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cba55.dir/build.make CMakeFiles/cmTC_cba55.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi'
+        Building C object CMakeFiles/cmTC_cba55.dir/HAVE_INT_TYPES_H.c.o
+        /usr/bin/aarch64-linux-gnu-gcc   -I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2  -o CMakeFiles/cmTC_cba55.dir/HAVE_INT_TYPES_H.c.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi/HAVE_INT_TYPES_H.c
+        Linking C executable cmTC_cba55
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba55.dir/link.txt --verbose=1
+        /usr/bin/aarch64-linux-gnu-gcc -I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong  CMakeFiles/cmTC_cba55.dir/HAVE_INT_TYPES_H.c.o -o cmTC_cba55
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-E4Kxdi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:583 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_NO_STRICT_OVERFLOW"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_NO_STRICT_OVERFLOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_24e1e/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_24e1e.dir/build.make CMakeFiles/cmTC_24e1e.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA'
+        Building CXX object CMakeFiles/cmTC_24e1e.dir/src.cxx.o
+        /usr/bin/aarch64-linux-gnu-g++ -DCC_HAS_NO_STRICT_OVERFLOW  -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -Wno-strict-overflow -o CMakeFiles/cmTC_24e1e.dir/src.cxx.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA/src.cxx
+        Linking CXX executable cmTC_24e1e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24e1e.dir/link.txt --verbose=1
+        /usr/bin/aarch64-linux-gnu-g++ -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong  CMakeFiles/cmTC_24e1e.dir/src.cxx.o -o cmTC_24e1e
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VUW4PA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:584 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_NO_NARROWING"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_NO_NARROWING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2fe9b/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2fe9b.dir/build.make CMakeFiles/cmTC_2fe9b.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs'
+        Building CXX object CMakeFiles/cmTC_2fe9b.dir/src.cxx.o
+        /usr/bin/aarch64-linux-gnu-g++ -DCC_HAS_NO_NARROWING  -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -Wno-narrowing -o CMakeFiles/cmTC_2fe9b.dir/src.cxx.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs/src.cxx
+        Linking CXX executable cmTC_2fe9b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fe9b.dir/link.txt --verbose=1
+        /usr/bin/aarch64-linux-gnu-g++ -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong  CMakeFiles/cmTC_2fe9b.dir/src.cxx.o -o cmTC_2fe9b
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-l7RkGs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:585 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_NO_ARRAY_BOUNDS"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_NO_ARRAY_BOUNDS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eebd8/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eebd8.dir/build.make CMakeFiles/cmTC_eebd8.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4'
+        Building CXX object CMakeFiles/cmTC_eebd8.dir/src.cxx.o
+        /usr/bin/aarch64-linux-gnu-g++ -DCC_HAS_NO_ARRAY_BOUNDS  -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -Wno-array-bounds -o CMakeFiles/cmTC_eebd8.dir/src.cxx.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4/src.cxx
+        Linking CXX executable cmTC_eebd8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eebd8.dir/link.txt --verbose=1
+        /usr/bin/aarch64-linux-gnu-g++ -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong  CMakeFiles/cmTC_eebd8.dir/src.cxx.o -o cmTC_eebd8
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-2SXtI4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:589 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_FAST_MATH"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_FAST_MATH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c25aa/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c25aa.dir/build.make CMakeFiles/cmTC_c25aa.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x'
+        Building CXX object CMakeFiles/cmTC_c25aa.dir/src.cxx.o
+        /usr/bin/aarch64-linux-gnu-g++ -DCC_HAS_FAST_MATH  -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -ffast-math -o CMakeFiles/cmTC_c25aa.dir/src.cxx.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x/src.cxx
+        Linking CXX executable cmTC_c25aa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c25aa.dir/link.txt --verbose=1
+        /usr/bin/aarch64-linux-gnu-g++ -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong  CMakeFiles/cmTC_c25aa.dir/src.cxx.o -o cmTC_c25aa
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-9HC44x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:594 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_STACK_REALIGN"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_STACK_REALIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c514/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4c514.dir/build.make CMakeFiles/cmTC_4c514.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ'
+        Building CXX object CMakeFiles/cmTC_4c514.dir/src.cxx.o
+        /usr/bin/aarch64-linux-gnu-g++ -DCC_HAS_STACK_REALIGN  -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -mstackrealign -o CMakeFiles/cmTC_4c514.dir/src.cxx.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ/src.cxx
+        aarch64-linux-gnu-g++: error: unrecognized command-line option '-mstackrealign'
+        gmake[2]: *** [CMakeFiles/cmTC_4c514.dir/build.make:81: CMakeFiles/cmTC_4c514.dir/src.cxx.o] Error 1
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ'
+        gmake[1]: *** [Makefile:134: cmTC_4c514/fast] Error 2
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-pC3XsZ'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:600 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_FNO_EXCEPTIONS_FLAG"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_FNO_EXCEPTIONS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_20e55/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_20e55.dir/build.make CMakeFiles/cmTC_20e55.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB'
+        Building CXX object CMakeFiles/cmTC_20e55.dir/src.cxx.o
+        /usr/bin/aarch64-linux-gnu-g++ -DCC_HAS_FNO_EXCEPTIONS_FLAG  -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2    -fno-exceptions -o CMakeFiles/cmTC_20e55.dir/src.cxx.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB/src.cxx
+        Linking CXX executable cmTC_20e55
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20e55.dir/link.txt --verbose=1
+        /usr/bin/aarch64-linux-gnu-g++ -I/home/harshit/Swift/build-linux-arm64/contrib/include -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong  CMakeFiles/cmTC_20e55.dir/src.cxx.o -o cmTC_20e55
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r48xdB'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
+      nasm: error: unrecognised option `-q'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft":
+      nasm: error: unrecognised option `-?'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
+      Usage: /usr/bin/nasm [-@ response_file] [options...] [--] filename
+             /usr/bin/nasm -v (or --v)
+      
+      Options (values in brackets indicate defaults):
+      
+          -h            show this text and exit (also --help)
+          -v (or --v)   print the NASM version number and exit
+          -@ file       response file; one command line option per line
+      
+          -o outfile    write output to outfile
+          --keep-all    output files will not be removed even if an error happens
+      
+          -Xformat      specify error reporting format (gnu or vc)
+          -s            redirect error messages to stdout
+          -Zfile        redirect error messages to file
+      
+          -M            generate Makefile dependencies on stdout
+          -MG           d:o, missing files assumed generated
+          -MF file      set Makefile dependency file
+          -MD file      assemble and generate dependencies
+          -MT file      dependency target name
+          -MQ file      dependency target name (quoted)
+          -MP           emit phony targets
+      
+          -f format     select output file format
+             bin                  Flat raw binary (MS-DOS, embedded, ...) [default]
+             ith                  Intel Hex encoded flat binary
+             srec                 Motorola S-records encoded flat binary
+             aout                 Linux a.out
+             aoutb                NetBSD/FreeBSD a.out
+             coff                 COFF (i386) (DJGPP, some Unix variants)
+             elf32                ELF32 (i386) (Linux, most Unix variants)
+             elf64                ELF64 (x86-64) (Linux, most Unix variants)
+             elfx32               ELFx32 (ELF32 for x86-64) (Linux)
+             as86                 as86 (bin86/dev86 toolchain)
+             obj                  Intel/Microsoft OMF (MS-DOS, OS/2, Win16)
+             win32                Microsoft extended COFF for Win32 (i386)
+             win64                Microsoft extended COFF for Win64 (x86-64)
+             ieee                 IEEE-695 (LADsoft variant) object file format
+             macho32              Mach-O i386 (Mach, including MacOS X and variants)
+             macho64              Mach-O x86-64 (Mach, including MacOS X and variants)
+             dbg                  Trace of all info passed to output stage
+             elf                  Legacy alias for "elf32"
+             macho                Legacy alias for "macho32"
+             win                  Legacy alias for "win32"
+      
+          -g            generate debugging information
+          -F format     select a debugging format (output format dependent)
+          -gformat      same as -g -F format
+             elf32:     dwarf     ELF32 (i386) dwarf (newer) [default]
+                        stabs     ELF32 (i386) stabs (older)
+             elf64:     dwarf     ELF64 (x86-64) dwarf (newer) [default]
+                        stabs     ELF64 (x86-64) stabs (older)
+             elfx32:    dwarf     ELFx32 (x86-64) dwarf (newer) [default]
+                        stabs     ELFx32 (x86-64) stabs (older)
+             obj:       borland   Borland Debug Records [default]
+             win32:     cv8       Codeview 8+ [default]
+             win64:     cv8       Codeview 8+ [default]
+             ieee:      ladsoft   LADsoft Debug Records [default]
+             macho32:   dwarf     Mach-O i386 dwarf for Darwin/MacOS [default]
+             macho64:   dwarf     Mach-O x86-64 dwarf for Darwin/MacOS [default]
+             dbg:       debug     Trace of all info passed to debug stage [default]
+      
+          -l listfile   write listing to a list file
+          -Lflags...    add optional information to the list file
+             -Lb        show builtin macro packages (standard and %use)
+             -Ld        show byte and repeat counts in decimal, not hex
+             -Le        show the preprocessed output
+             -Lf        ignore .nolist (force output)
+             -Lm        show multi-line macro calls with expanded parameters
+             -Lp        output a list file every pass, in case of errors
+             -Ls        show all single-line macro definitions
+             -Lw        flush the output after every line (very slow!)
+             -L+        enable all listing options except -Lw (very verbose!)
+      
+          -Oflags...    optimize opcodes, immediates and branch offsets
+             -O0        no optimization
+             -O1        minimal optimization
+             -Ox        multipass optimization (default)
+             -Ov        display the number of passes executed at the end
+          -t            assemble in limited SciTech TASM compatible mode
+      
+          -E (or -e)    preprocess only (writes output to stdout by default)
+          -a            don't preprocess (assemble only)
+          -Ipath        add a pathname to the include file path
+          -Pfile        pre-include a file (also --include)
+          -Dmacro[=str] pre-define a macro
+          -Umacro       undefine a macro
+         --pragma str   pre-executes a specific %%pragma
+         --before str   add line (usually a preprocessor statement) before the input
+         --no-line      ignore %line directives in input
+      
+         --prefix str   prepend the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --suffix str   append the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --lprefix str  prepend the given string to local symbols
+         --lpostfix str append the given string to local symbols
+      
+         --reproducible attempt to produce run-to-run identical output
+      
+          -w+x          enable warning x (also -Wx)
+          -w-x          disable warning x (also -Wno-x)
+          -w[+-]error   promote all warnings to errors (also -Werror)
+          -w[+-]error=x promote warning x to errors (also -Werror=x)
+             all                  all possible warnings
+             db-empty             no operand for data declaration [on]
+             ea                   all warnings prefixed with "ea-"
+             ea-absolute          absolute address cannot be RIP-relative [on]
+             ea-dispsize          displacement size ignored on absolute address [on]
+             float                all warnings prefixed with "float-"
+             float-denorm         floating point denormal [off]
+             float-overflow       floating point overflow [on]
+             float-toolong        too many digits in floating-point number [on]
+             float-underflow      floating point underflow [off]
+             forward              forward reference may have unpredictable results [on]
+             label                all warnings prefixed with "label-"
+             label-orphan         labels alone on lines without trailing : [on]
+             label-redef          label redefined to an identical value [off]
+             label-redef-late     label (re)defined during code generation [error]
+             number-overflow      numeric constant does not fit [on]
+             obsolete             all warnings prefixed with "obsolete-"
+             obsolete-nop         instruction obsolete and is a noop on the target CPU [on]
+             obsolete-removed     instruction obsolete and removed on the target CPU [on]
+             obsolete-valid       instruction obsolete but valid on the target CPU [on]
+             phase                phase error during stabilization [off]
+             pp                   all warnings prefixed with "pp-"
+             pp-else              all warnings prefixed with "pp-else-"
+             pp-else-elif         %elif after %else [on]
+             pp-else-else         %else after %else [on]
+             pp-empty-braces      empty %{} construct [on]
+             pp-environment       nonexistent environment variable [on]
+             pp-macro             all warnings prefixed with "pp-macro-"
+             pp-macro-def         all warnings prefixed with "pp-macro-def-"
+             pp-macro-def-case-single single-line macro defined both case sensitive and insensitive [on]
+             pp-macro-def-greedy-single single-line macro [on]
+             pp-macro-def-param-single single-line macro defined with and without parameters [error]
+             pp-macro-defaults    macros with more default than optional parameters [on]
+             pp-macro-params      all warnings prefixed with "pp-macro-params-"
+             pp-macro-params-legacy improperly calling multi-line macro for legacy support [on]
+             pp-macro-params-multi multi-line macro calls with wrong parameter count [on]
+             pp-macro-params-single single-line macro calls with wrong parameter count [on]
+             pp-macro-redef-multi redefining multi-line macro [on]
+             pp-open              all warnings prefixed with "pp-open-"
+             pp-open-braces       unterminated %{...} [on]
+             pp-open-brackets     unterminated %[...] [on]
+             pp-open-string       unterminated string [on]
+             pp-rep-negative      regative %rep count [on]
+             pp-sel-range         %sel() argument out of range [on]
+             pp-trailing          trailing garbage ignored [on]
+             pragma               all warnings prefixed with "pragma-"
+             pragma-bad           malformed %pragma [off]
+             pragma-empty         empty %pragma directive [off]
+             pragma-na            %pragma not applicable to this compilation [off]
+             pragma-unknown       unknown %pragma facility or directive [off]
+             prefix               all warnings prefixed with "prefix-"
+             prefix-bnd           invalid BND prefix [on]
+             prefix-hle           invalid HLE prefix [on]
+             prefix-lock          all warnings prefixed with "prefix-lock-"
+             prefix-lock-error    LOCK prefix on unlockable instruction [on]
+             prefix-lock-xchg     superfluous LOCK prefix on XCHG instruction [on]
+             prefix-opsize        invalid operand size prefix [on]
+             prefix-seg           segment prefix ignored in 64-bit mode [on]
+             ptr                  non-NASM keyword used in other assemblers [on]
+             regsize              register size specification ignored [on]
+             reloc                all warnings prefixed with "reloc-"
+             reloc-abs            all warnings prefixed with "reloc-abs-"
+             reloc-abs-byte       8-bit absolute section-crossing relocation [off]
+             reloc-abs-dword      32-bit absolute section-crossing relocation [off]
+             reloc-abs-qword      64-bit absolute section-crossing relocation [off]
+             reloc-abs-word       16-bit absolute section-crossing relocation [off]
+             reloc-rel            all warnings prefixed with "reloc-rel-"
+             reloc-rel-byte       8-bit relative section-crossing relocation [off]
+             reloc-rel-dword      32-bit relative section-crossing relocation [off]
+             reloc-rel-qword      64-bit relative section-crossing relocation [off]
+             reloc-rel-word       16-bit relative section-crossing relocation [off]
+             unknown-warning      unknown warning in -W/-w or warning directive [off]
+             user                 %warning directives [on]
+             warn-stack-empty     warning stack empty [on]
+             zeroing              RESx in initialized section becomes zero [on]
+             zext-reloc           relocation zero-extended to match output format [on]
+             other                any warning not specifically mentioned above [on]
+      
+         --limit-X val  set execution limit X
+             passes               total number of passes [unlimited]
+             stalled-passes       number of passes without forward progress [1000]
+             macro-levels         levels of macro expansion [10000]
+             macro-tokens         tokens processed during single-lime macro expansion [10000000]
+             mmacros              multi-line macros before final return [100000]
+             rep                  %rep count [1000000]
+             eval                 expression evaluation descent [8192]
+             lines                total source lines processed [2000000000]
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
+      nasm: fatal: no input file specified
+      Type /usr/bin/nasm -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      nasm: fatal: no input file specified
+      Type /usr/bin/nasm -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is NASM using "-v" matched "(NASM version)":
+      NASM version 2.16.03
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "common/CMakeLists.txt:217 (check_symbol_exists)"
+    checks:
+      - "Looking for strtok_r"
+    directories:
+      source: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn"
+      binary: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "HAVE_STRTOK_R"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2f1bf/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2f1bf.dir/build.make CMakeFiles/cmTC_2f1bf.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn'
+        Building C object CMakeFiles/cmTC_2f1bf.dir/CheckSymbolExists.c.o
+        /usr/bin/aarch64-linux-gnu-gcc   -I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2  -o CMakeFiles/cmTC_2f1bf.dir/CheckSymbolExists.c.o -c /home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn/CheckSymbolExists.c
+        Linking C executable cmTC_2f1bf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f1bf.dir/link.txt --verbose=1
+        /usr/bin/aarch64-linux-gnu-gcc -I/home/harshit/Swift/build-linux-arm64/contrib/include -std=gnu99 -fstack-protector-strong -D_FORTIFY_SOURCE=2  -L/home/harshit/Swift/build-linux-arm64/contrib/lib -fstack-protector-strong  CMakeFiles/cmTC_2f1bf.dir/CheckSymbolExists.c.o -o cmTC_2f1bf
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-linux-arm64/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-c9NsRn'
+        
+      exitCode: 0
+...

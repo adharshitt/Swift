@@ -1,0 +1,60 @@
+probe: build tuple...(pass) x86_64-pc-linux-gnu
+find: ar...(pass) /usr/bin/ar
+find: cp...(pass) /usr/bin/cp
+find: gm4...(pass) /usr/bin/m4
+find: mkdir...(pass) /usr/bin/mkdir
+find: gpatch...(pass) /usr/bin/patch
+find: rm...(pass) /usr/bin/rm
+find: ranlib...(pass) /usr/bin/ranlib
+find: strip...(pass) /usr/bin/strip
+find: gtar...(pass) /usr/bin/tar
+find: python3...(pass) /usr/bin/python3
+find: gcc...(pass) /usr/bin/gcc
+find: gmake...(pass) /usr/bin/gmake
+find: autoconf...(pass) /usr/bin/autoconf
+find: automake...(pass) /usr/bin/automake
+find: libtool...(pass) /usr/bin/libtool
+find: lipo...(fail) not found
+find: pkg-config...(pass) /usr/bin/pkg-config
+find: meson...(pass) /usr/bin/meson
+find: nasm...(pass) /usr/bin/nasm
+find: ninja-build...(pass) /usr/bin/ninja
+find: cargo...(fail) not found
+find: cargo-cbuild...(fail) not found
+find: xcodebuild...(fail) not found
+find: i686-w64-mingw32-ar...(pass) /usr/bin/i686-w64-mingw32-ar
+find: i686-w64-mingw32-gcc...(pass) /usr/bin/i686-w64-mingw32-gcc
+find: i686-w64-mingw32-ranlib...(pass) /usr/bin/i686-w64-mingw32-ranlib
+find: i686-w64-mingw32-strip...(pass) /usr/bin/i686-w64-mingw32-strip
+probe: checking for -Oz...(pass) end
+compute: available architectures...(pass) i686
+probe: number of CPU cores...(pass) 12
+probe: repo info...(pass) https://github.com/adharshitt/Swift.git
+compute: project data...(pass) HandBrake (developer)
+version probe: autoconf 2.71.0...(pass) 2.72
+version probe: automake 1.13.0...(pass) 1.17
+version probe: pkg-config 0.27.0...(pass) 1.8.1
+version probe: meson 0.51.0...(pass) 1.7.0
+version probe: nasm 2.13.0...(pass) 2.16.03
+compute: host tuple...(pass) i686-w64-mingw32
+find: cmake...(pass) /usr/bin/cmake
+version probe: cmake 3.16.3...(pass) 3.31.6
+probe: static dlfcn...(fail) code 1
+probe: static pthread...(pass) 
+probe: static bz2...(fail) code 1
+probe: static zlib...(fail) code 1
+probe: static xz...(fail) code 1
+probe: static iconv...(fail) code 1
+probe: static regex...(fail) code 1
+probe: static strtok_r...(pass) 
+probe: strerror_r...(fail) code 1
+probe: checking for -Wno-format-truncation...(pass) end
+compute: makevar SRC/    = ..
+compute: makevar BUILD/  = .
+compute: makevar PREFIX/ = /usr/local
+mkdir: build-win-x86
+chdir: build-win-x86
+write: GNUmakefile
+mkdir: project
+write: project/handbrake.m4
+write: distfile.cfg

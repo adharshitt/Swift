@@ -1,0 +1,22 @@
+[binaries]
+c = 'i686-w64-mingw32-gcc'
+cpp = 'i686-w64-mingw32-g++'
+rust = ['rustc', '--target', 'i686-pc-windows-msvc', '-C', 'linker=i686-w64-mingw32-gcc']
+ar = 'i686-w64-mingw32-ar'
+ranlib = 'i686-w64-mingw32-ranlib'
+strip = 'i686-w64-mingw32-strip'
+windres = 'i686-w64-mingw32-windres'
+dlltool = 'i686-w64-mingw32-dlltool'
+pkgconfig = 'pkg-config'
+pkg-config = 'pkg-config'
+cmake = 'cmake'
+
+[properties]
+needs_exe_wrapper = true
+has_function_posix_memalign = false
+
+[host_machine]
+system = 'windows'
+cpu_family = 'x86'
+cpu = 'i686'
+endian = 'little'

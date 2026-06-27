@@ -1,0 +1,10 @@
+prefix=/home/harshit/Swift/build-linux-x64/contrib
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libdvdnav
+Description: DVD Navigation library
+Version: 7.0.0
+Requires: dvdread >= 6.0.0
+Libs: -L${libdir} -ldvdnav -pthread
+Cflags: -I${includedir} -pthread

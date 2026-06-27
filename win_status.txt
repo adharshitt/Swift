@@ -1,0 +1,50 @@
+
+X master Windows Build · 28049512795
+Triggered via push about 11 hours ago
+
+JOBS
+X CLI / LibHB in 5m19s (ID 83036182418)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Cargo-C Toolchain Cache
+  ✓ Setup Environment
+  ✓ Setup Toolchain
+  ✓ Setup Cargo-C Toolchain
+  X Build CLI and LibHB
+  - Upload HandBrakeCLI
+  - Upload LibHB
+  - Post Cargo-C Toolchain Cache
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+X CLI / LibHB (ARM) in 5m10s (ID 83036182446)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Cargo-C Toolchain Cache
+  ✓ Environment Setup
+  ✓ Setup Toolchain
+  ✓ Setup Cargo-C Toolchain
+  X Build CLI and LibHB
+  - Upload HandBrakeCLI
+  - Upload LibHB
+  - Post Cargo-C Toolchain Cache
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+- Windows UI ARM in 0s (ID 83037257142)
+- Windows UI in 0s (ID 83037290565)
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+CLI / LibHB: .github#2
+
+X Process completed with exit code 1.
+CLI / LibHB: .github#38
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+CLI / LibHB (ARM): .github#2
+
+X Process completed with exit code 1.
+CLI / LibHB (ARM): .github#40
+
+
+To see what failed, try: gh run view 28049512795 --log-failed
+View this run on GitHub: https://github.com/adharshitt/Swift/actions/runs/28049512795

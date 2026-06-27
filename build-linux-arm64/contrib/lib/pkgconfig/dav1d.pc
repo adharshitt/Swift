@@ -1,0 +1,9 @@
+prefix=/home/harshit/Swift/build-linux-arm64/contrib
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libdav1d
+Description: AV1 decoding library
+Version: 1.5.3
+Libs: -L${libdir} -ldav1d -pthread -ldl
+Cflags: -I${includedir} -pthread

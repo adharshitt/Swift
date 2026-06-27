@@ -12,11 +12,6 @@ jobs:
     runs-on: macos-14
     steps:
     - uses: actions/checkout@v4
-    - name: Run Memory Leak Benchmark
-      run: |
-        clang -framework CoreFoundation -framework CoreVideo -framework CoreMedia -framework CoreGraphics test/leak_benchmark.c -o test/leak_benchmark
-        ./test/leak_benchmark
-        exit 1
     - uses: actions/setup-python@v5
       with:
         python-version: '3.13.7'

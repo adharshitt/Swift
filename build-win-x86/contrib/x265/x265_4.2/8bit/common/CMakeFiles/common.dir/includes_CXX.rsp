@@ -1,0 +1,1 @@
+-I"/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/." -I"/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common" -I"/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/encoder" -I"/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit"

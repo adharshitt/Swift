@@ -2033,6 +2033,7 @@ static void hb_vt_send(hb_work_private_t *pv, hb_buffer_t *in)
         if (err)
         {
             hb_log("VTCompressionSession: VTCompressionSessionEncodeFrame error");
+            hb_buffer_close(&in);
         }
 
         if (frameProperties)

@@ -1,0 +1,1225 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      The target system is: Windows -  - i686
+      The host system is: Linux - 6.18.33.1-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/i686-w64-mingw32-gcc 
+      Build flags: -I/home/harshit/Swift/build-win-x86/contrib/include;-std=gnu99;-mfpmath=sse;-msse2;-fstack-protector-strong;-D_FORTIFY_SOURCE=2;-mno-ms-bitfields
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/3.31.6/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/i686-w64-mingw32-g++ 
+      Build flags: -I/home/harshit/Swift/build-win-x86/contrib/include;-mfpmath=sse;-msse2;-fstack-protector-strong;-D_FORTIFY_SOURCE=2;-mno-ms-bitfields
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/3.31.6/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f9c4d/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f9c4d.dir/build.make CMakeFiles/cmTC_f9c4d.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar'
+        Building C object CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj
+        /usr/bin/i686-w64-mingw32-gcc   -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -v -o CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc
+        Target: i686-w64-mingw32
+        Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2
+        Thread model: win32
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14-win32 (GCC) 
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_f9c4d.dir/'
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/cc1 -quiet -v -I /home/harshit/Swift/build-win-x86/contrib/include -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f9c4d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfpmath=sse -msse2 -mno-ms-bitfields -mtune=generic -march=pentiumpro -std=gnu99 -version -fstack-protector-strong -o /tmp/cceDWzwq.s
+        GNU C99 (GCC) version 14-win32 (i686-w64-mingw32)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/sys-include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/harshit/Swift/build-win-x86/contrib/include
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/include
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 7366990319de956733ead6946fbb1efa
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_f9c4d.dir/'
+         /usr/bin/i686-w64-mingw32-as -v -I /home/harshit/Swift/build-win-x86/contrib/include -o CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj /tmp/cceDWzwq.s
+        GNU assembler version 2.44 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f9c4d.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9c4d.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper
+        Target: i686-w64-mingw32
+        Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2
+        Thread model: win32
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14-win32 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_f9c4d.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_f9c4d.'
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0qXYSa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_f9c4d.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_f9c4d.dir/objects.a --no-whole-archive --out-implib libcmTC_f9c4d.dll.a --major-image-version 0 --minor-image-version 0 -lssp_nonshared -lssp -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o
+        collect2 version 14-win32
+        /usr/bin/i686-w64-mingw32-ld -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0qXYSa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_f9c4d.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_f9c4d.dir/objects.a --no-whole-archive --out-implib libcmTC_f9c4d.dll.a --major-image-version 0 --minor-image-version 0 -lssp_nonshared -lssp -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o
+        GNU ld (GNU Binutils) 2.44
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_f9c4d.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_f9c4d.'
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_f9c4d.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_f9c4d.dir/objects.a @CMakeFiles/cmTC_f9c4d.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-gcc -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_f9c4d.dir/objects.a -Wl,--no-whole-archive -o cmTC_f9c4d.exe -Wl,--out-implib,libcmTC_f9c4d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/harshit/Swift/build-win-x86/contrib/include]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/include]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include]
+        end of search list found
+        collapse include dir [/home/harshit/Swift/build-win-x86/contrib/include] ==> [/home/harshit/Swift/build-win-x86/contrib/include]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/include] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32/include]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include] ==> [/usr/i686-w64-mingw32/include]
+        implicit include dirs: [/home/harshit/Swift/build-win-x86/contrib/include;/usr/lib/gcc/i686-w64-mingw32/14-win32/include;/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed;/usr/i686-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f9c4d/fast]
+        ignore line: [gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f9c4d.dir/build.make CMakeFiles/cmTC_f9c4d.dir/build]
+        ignore line: [gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar']
+        ignore line: [Building C object CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/bin/i686-w64-mingw32-gcc   -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -v -o CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14-win32 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_f9c4d.dir/']
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/cc1 -quiet -v -I /home/harshit/Swift/build-win-x86/contrib/include -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f9c4d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfpmath=sse -msse2 -mno-ms-bitfields -mtune=generic -march=pentiumpro -std=gnu99 -version -fstack-protector-strong -o /tmp/cceDWzwq.s]
+        ignore line: [GNU C99 (GCC) version 14-win32 (i686-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/harshit/Swift/build-win-x86/contrib/include]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/include]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 7366990319de956733ead6946fbb1efa]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_f9c4d.dir/']
+        ignore line: [ /usr/bin/i686-w64-mingw32-as -v -I /home/harshit/Swift/build-win-x86/contrib/include -o CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj /tmp/cceDWzwq.s]
+        ignore line: [GNU assembler version 2.44 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_f9c4d.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f9c4d.exe]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9c4d.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14-win32 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_f9c4d.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_f9c4d.']
+        link line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0qXYSa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_f9c4d.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_f9c4d.dir/objects.a --no-whole-archive --out-implib libcmTC_f9c4d.dll.a --major-image-version 0 --minor-image-version 0 -lssp_nonshared -lssp -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc0qXYSa.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pe] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_f9c4d.exe] ==> ignore
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o]
+          arg [-L/home/harshit/Swift/build-win-x86/contrib/lib] ==> dir [/home/harshit/Swift/build-win-x86/contrib/lib]
+          arg [-L/usr/lib/gcc/i686-w64-mingw32/14-win32] ==> dir [/usr/lib/gcc/i686-w64-mingw32/14-win32]
+          arg [-L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib]
+          arg [-L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib] ==> dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_f9c4d.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_f9c4d.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+          arg [-lssp] ==> lib [ssp]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+        ignore line: [collect2 version 14-win32]
+        ignore line: [/usr/bin/i686-w64-mingw32-ld -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0qXYSa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_f9c4d.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_f9c4d.dir/objects.a --no-whole-archive --out-implib libcmTC_f9c4d.dll.a --major-image-version 0 --minor-image-version 0 -lssp_nonshared -lssp -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+        ignore line: [GNU ld (GNU Binutils) 2.44]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-std=gnu99' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_f9c4d.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_f9c4d.']
+        ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_f9c4d.dir/objects.a]
+        ignore line: [/usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_f9c4d.dir/objects.a @CMakeFiles/cmTC_f9c4d.dir/objects1.rsp]
+        ignore line: [/usr/bin/i686-w64-mingw32-gcc -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong -v -Wl -v -Wl --whole-archive CMakeFiles/cmTC_f9c4d.dir/objects.a -Wl --no-whole-archive -o cmTC_f9c4d.exe -Wl --out-implib libcmTC_f9c4d.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar']
+        ignore line: [gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-0CNLar']
+        ignore line: []
+        ignore line: []
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> [/usr/i686-w64-mingw32/lib/crt2.o]
+        collapse library dir [/home/harshit/Swift/build-win-x86/contrib/lib] ==> [/home/harshit/Swift/build-win-x86/contrib/lib]
+        collapse library dir [/usr/lib/gcc/i686-w64-mingw32/14-win32] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32]
+        collapse library dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib] ==> [/usr/i686-w64-mingw32/lib]
+        collapse library dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib] ==> [/usr/i686-w64-mingw32/lib]
+        implicit libs: [ssp_nonshared;ssp;mingw32;gcc;mingwex;kernel32;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32]
+        implicit objs: [/usr/i686-w64-mingw32/lib/crt2.o;/usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o;/usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+        implicit dirs: [/home/harshit/Swift/build-win-x86/contrib/lib;/usr/lib/gcc/i686-w64-mingw32/14-win32;/usr/i686-w64-mingw32/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a0246/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a0246.dir/build.make CMakeFiles/cmTC_a0246.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy'
+        Building CXX object CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj
+        /usr/bin/i686-w64-mingw32-g++   -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -v -o CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++
+        Target: i686-w64-mingw32
+        Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2
+        Thread model: win32
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14-win32 (GCC) 
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_a0246.dir/'
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/cc1plus -quiet -v -I /home/harshit/Swift/build-win-x86/contrib/include -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a0246.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mfpmath=sse -msse2 -mno-ms-bitfields -mtune=generic -march=pentiumpro -version -fstack-protector-strong -o /tmp/cc4tx4Mg.s
+        GNU C++17 (GCC) version 14-win32 (i686-w64-mingw32)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/sys-include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/harshit/Swift/build-win-x86/contrib/include
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/i686-w64-mingw32
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/backward
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/include
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 0c95b4a57a4e8fed982fd7a99a21a3ee
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_a0246.dir/'
+         /usr/bin/i686-w64-mingw32-as -v -I /home/harshit/Swift/build-win-x86/contrib/include -o CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc4tx4Mg.s
+        GNU assembler version 2.44 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_a0246.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0246.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper
+        Target: i686-w64-mingw32
+        Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2
+        Thread model: win32
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14-win32 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_a0246.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_a0246.'
+         /usr/lib/gcc/i686-w64-mingw32/14-win32/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSvuj2y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_a0246.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_a0246.dir/objects.a --no-whole-archive --out-implib libcmTC_a0246.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lssp_nonshared -lssp -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o
+        collect2 version 14-win32
+        /usr/bin/i686-w64-mingw32-ld -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSvuj2y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_a0246.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_a0246.dir/objects.a --no-whole-archive --out-implib libcmTC_a0246.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lssp_nonshared -lssp -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o
+        GNU ld (GNU Binutils) 2.44
+        COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_a0246.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_a0246.'
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_a0246.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_a0246.dir/objects.a @CMakeFiles/cmTC_a0246.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_a0246.dir/objects.a -Wl,--no-whole-archive -o cmTC_a0246.exe -Wl,--out-implib,libcmTC_a0246.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/harshit/Swift/build-win-x86/contrib/include]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/i686-w64-mingw32]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/backward]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/include]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed]
+          add: [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include]
+        end of search list found
+        collapse include dir [/home/harshit/Swift/build-win-x86/contrib/include] ==> [/home/harshit/Swift/build-win-x86/contrib/include]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/i686-w64-mingw32] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/i686-w64-mingw32]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/backward] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/backward]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/include] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32/include]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed]
+        collapse include dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include] ==> [/usr/i686-w64-mingw32/include]
+        implicit include dirs: [/home/harshit/Swift/build-win-x86/contrib/include;/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++;/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/i686-w64-mingw32;/usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/backward;/usr/lib/gcc/i686-w64-mingw32/14-win32/include;/usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed;/usr/i686-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a0246/fast]
+        ignore line: [gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a0246.dir/build.make CMakeFiles/cmTC_a0246.dir/build]
+        ignore line: [gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/usr/bin/i686-w64-mingw32-g++   -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -v -o CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14-win32 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_a0246.dir/']
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/cc1plus -quiet -v -I /home/harshit/Swift/build-win-x86/contrib/include -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a0246.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mfpmath=sse -msse2 -mno-ms-bitfields -mtune=generic -march=pentiumpro -version -fstack-protector-strong -o /tmp/cc4tx4Mg.s]
+        ignore line: [GNU C++17 (GCC) version 14-win32 (i686-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/harshit/Swift/build-win-x86/contrib/include]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/i686-w64-mingw32]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/include/c++/backward]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/include]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/include-fixed]
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0c95b4a57a4e8fed982fd7a99a21a3ee]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_a0246.dir/']
+        ignore line: [ /usr/bin/i686-w64-mingw32-as -v -I /home/harshit/Swift/build-win-x86/contrib/include -o CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc4tx4Mg.s]
+        ignore line: [GNU assembler version 2.44 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-v' '-o' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_a0246.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_a0246.exe]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0246.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: /build/reproducible-path/gcc-mingw-w64-27+b1/src/configure --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --program-prefix=i686-w64-mingw32- --target=i686-w64-mingw32 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes --enable-dependency-tracking SED=/bin/sed --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --enable-threads=win32 --program-suffix=-win32 --disable-sjlj-exceptions --with-dwarf2]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14-win32 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/14-win32/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_a0246.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_a0246.']
+        link line: [ /usr/lib/gcc/i686-w64-mingw32/14-win32/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSvuj2y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_a0246.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_a0246.dir/objects.a --no-whole-archive --out-implib libcmTC_a0246.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lssp_nonshared -lssp -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccSvuj2y.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pe] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-u] ==> ignore
+          arg [___register_frame_info] ==> ignore
+          arg [-u] ==> ignore
+          arg [___deregister_frame_info] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a0246.exe] ==> ignore
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o]
+          arg [-L/home/harshit/Swift/build-win-x86/contrib/lib] ==> dir [/home/harshit/Swift/build-win-x86/contrib/lib]
+          arg [-L/usr/lib/gcc/i686-w64-mingw32/14-win32] ==> dir [/usr/lib/gcc/i686-w64-mingw32/14-win32]
+          arg [-L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib]
+          arg [-L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib] ==> dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_a0246.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_a0246.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+          arg [-lssp] ==> lib [ssp]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+        ignore line: [collect2 version 14-win32]
+        ignore line: [/usr/bin/i686-w64-mingw32-ld -plugin /usr/lib/gcc/i686-w64-mingw32/14-win32/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/14-win32/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSvuj2y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_a0246.exe /usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o -L/home/harshit/Swift/build-win-x86/contrib/lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32 -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_a0246.dir/objects.a --no-whole-archive --out-implib libcmTC_a0246.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lssp_nonshared -lssp -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+        ignore line: [GNU ld (GNU Binutils) 2.44]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/harshit/Swift/build-win-x86/contrib/include' '-mfpmath=sse' '-msse2' '-fstack-protector-strong' '-D' '_FORTIFY_SOURCE=2' '-mno-ms-bitfields' '-L/home/harshit/Swift/build-win-x86/contrib/lib' '-fstack-protector-strong' '-v' '-o' 'cmTC_a0246.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_a0246.']
+        ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_a0246.dir/objects.a]
+        ignore line: [/usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_a0246.dir/objects.a @CMakeFiles/cmTC_a0246.dir/objects1.rsp]
+        ignore line: [/usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong -v -Wl -v -Wl --whole-archive CMakeFiles/cmTC_a0246.dir/objects.a -Wl --no-whole-archive -o cmTC_a0246.exe -Wl --out-implib libcmTC_a0246.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy']
+        ignore line: [gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-unmLiy']
+        ignore line: []
+        ignore line: []
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> [/usr/i686-w64-mingw32/lib/crt2.o]
+        collapse library dir [/home/harshit/Swift/build-win-x86/contrib/lib] ==> [/home/harshit/Swift/build-win-x86/contrib/lib]
+        collapse library dir [/usr/lib/gcc/i686-w64-mingw32/14-win32] ==> [/usr/lib/gcc/i686-w64-mingw32/14-win32]
+        collapse library dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib/../lib] ==> [/usr/i686-w64-mingw32/lib]
+        collapse library dir [/usr/lib/gcc/i686-w64-mingw32/14-win32/../../../../i686-w64-mingw32/lib] ==> [/usr/i686-w64-mingw32/lib]
+        implicit libs: [stdc++;ssp_nonshared;ssp;mingw32;gcc_s;gcc;mingwex;kernel32;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
+        implicit objs: [/usr/i686-w64-mingw32/lib/crt2.o;/usr/lib/gcc/i686-w64-mingw32/14-win32/crtbegin.o;/usr/lib/gcc/i686-w64-mingw32/14-win32/crtend.o]
+        implicit dirs: [/home/harshit/Swift/build-win-x86/contrib/lib;/usr/lib/gcc/i686-w64-mingw32/14-win32;/usr/i686-w64-mingw32/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "CMakeLists.txt:239 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "HAVE_INT_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3a2a3/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3a2a3.dir/build.make CMakeFiles/cmTC_3a2a3.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs'
+        Building C object CMakeFiles/cmTC_3a2a3.dir/HAVE_INT_TYPES_H.c.obj
+        /usr/bin/i686-w64-mingw32-gcc   -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -o CMakeFiles/cmTC_3a2a3.dir/HAVE_INT_TYPES_H.c.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs/HAVE_INT_TYPES_H.c
+        Linking C executable cmTC_3a2a3.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a2a3.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_3a2a3.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_3a2a3.dir/objects.a @CMakeFiles/cmTC_3a2a3.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-gcc -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_3a2a3.dir/objects.a -Wl,--no-whole-archive -o cmTC_3a2a3.exe -Wl,--out-implib,libcmTC_3a2a3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_3a2a3.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-gYhUGs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:583 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_NO_STRICT_OVERFLOW"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_NO_STRICT_OVERFLOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dac2e/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dac2e.dir/build.make CMakeFiles/cmTC_dac2e.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs'
+        Building CXX object CMakeFiles/cmTC_dac2e.dir/src.cxx.obj
+        /usr/bin/i686-w64-mingw32-g++ -DCC_HAS_NO_STRICT_OVERFLOW  -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -Wno-strict-overflow -o CMakeFiles/cmTC_dac2e.dir/src.cxx.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs/src.cxx
+        Linking CXX executable cmTC_dac2e.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dac2e.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_dac2e.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_dac2e.dir/objects.a @CMakeFiles/cmTC_dac2e.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_dac2e.dir/objects.a -Wl,--no-whole-archive -o cmTC_dac2e.exe -Wl,--out-implib,libcmTC_dac2e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_dac2e.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-TQTTxs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:584 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_NO_NARROWING"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_NO_NARROWING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed04c/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed04c.dir/build.make CMakeFiles/cmTC_ed04c.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX'
+        Building CXX object CMakeFiles/cmTC_ed04c.dir/src.cxx.obj
+        /usr/bin/i686-w64-mingw32-g++ -DCC_HAS_NO_NARROWING  -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -Wno-narrowing -o CMakeFiles/cmTC_ed04c.dir/src.cxx.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX/src.cxx
+        Linking CXX executable cmTC_ed04c.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed04c.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_ed04c.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_ed04c.dir/objects.a @CMakeFiles/cmTC_ed04c.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_ed04c.dir/objects.a -Wl,--no-whole-archive -o cmTC_ed04c.exe -Wl,--out-implib,libcmTC_ed04c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_ed04c.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-45NhFX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:585 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_NO_ARRAY_BOUNDS"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_NO_ARRAY_BOUNDS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed3ae/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed3ae.dir/build.make CMakeFiles/cmTC_ed3ae.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ'
+        Building CXX object CMakeFiles/cmTC_ed3ae.dir/src.cxx.obj
+        /usr/bin/i686-w64-mingw32-g++ -DCC_HAS_NO_ARRAY_BOUNDS  -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -Wno-array-bounds -o CMakeFiles/cmTC_ed3ae.dir/src.cxx.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ/src.cxx
+        Linking CXX executable cmTC_ed3ae.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed3ae.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_ed3ae.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_ed3ae.dir/objects.a @CMakeFiles/cmTC_ed3ae.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_ed3ae.dir/objects.a -Wl,--no-whole-archive -o cmTC_ed3ae.exe -Wl,--out-implib,libcmTC_ed3ae.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_ed3ae.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-r2e4MJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:589 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_FAST_MATH"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_FAST_MATH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d973b/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d973b.dir/build.make CMakeFiles/cmTC_d973b.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo'
+        Building CXX object CMakeFiles/cmTC_d973b.dir/src.cxx.obj
+        /usr/bin/i686-w64-mingw32-g++ -DCC_HAS_FAST_MATH  -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -ffast-math -o CMakeFiles/cmTC_d973b.dir/src.cxx.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo/src.cxx
+        Linking CXX executable cmTC_d973b.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d973b.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_d973b.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_d973b.dir/objects.a @CMakeFiles/cmTC_d973b.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_d973b.dir/objects.a -Wl,--no-whole-archive -o cmTC_d973b.exe -Wl,--out-implib,libcmTC_d973b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_d973b.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-X4BTLo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:594 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_STACK_REALIGN"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_STACK_REALIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ac70f/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ac70f.dir/build.make CMakeFiles/cmTC_ac70f.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9'
+        Building CXX object CMakeFiles/cmTC_ac70f.dir/src.cxx.obj
+        /usr/bin/i686-w64-mingw32-g++ -DCC_HAS_STACK_REALIGN  -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -mstackrealign -o CMakeFiles/cmTC_ac70f.dir/src.cxx.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9/src.cxx
+        Linking CXX executable cmTC_ac70f.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac70f.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_ac70f.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_ac70f.dir/objects.a @CMakeFiles/cmTC_ac70f.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_ac70f.dir/objects.a -Wl,--no-whole-archive -o cmTC_ac70f.exe -Wl,--out-implib,libcmTC_ac70f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_ac70f.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-VzdhF9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:600 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test CC_HAS_FNO_EXCEPTIONS_FLAG"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "CC_HAS_FNO_EXCEPTIONS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_619f6/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_619f6.dir/build.make CMakeFiles/cmTC_619f6.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn'
+        Building CXX object CMakeFiles/cmTC_619f6.dir/src.cxx.obj
+        /usr/bin/i686-w64-mingw32-g++ -DCC_HAS_FNO_EXCEPTIONS_FLAG  -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields    -fno-exceptions -o CMakeFiles/cmTC_619f6.dir/src.cxx.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn/src.cxx
+        Linking CXX executable cmTC_619f6.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_619f6.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_619f6.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_619f6.dir/objects.a @CMakeFiles/cmTC_619f6.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -I/home/harshit/Swift/build-win-x86/contrib/include -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_619f6.dir/objects.a -Wl,--no-whole-archive -o cmTC_619f6.exe -Wl,--out-implib,libcmTC_619f6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_619f6.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-BB9lTn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
+      nasm: error: unrecognised option `-q'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft":
+      nasm: error: unrecognised option `-?'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
+      Usage: /usr/bin/nasm [-@ response_file] [options...] [--] filename
+             /usr/bin/nasm -v (or --v)
+      
+      Options (values in brackets indicate defaults):
+      
+          -h            show this text and exit (also --help)
+          -v (or --v)   print the NASM version number and exit
+          -@ file       response file; one command line option per line
+      
+          -o outfile    write output to outfile
+          --keep-all    output files will not be removed even if an error happens
+      
+          -Xformat      specify error reporting format (gnu or vc)
+          -s            redirect error messages to stdout
+          -Zfile        redirect error messages to file
+      
+          -M            generate Makefile dependencies on stdout
+          -MG           d:o, missing files assumed generated
+          -MF file      set Makefile dependency file
+          -MD file      assemble and generate dependencies
+          -MT file      dependency target name
+          -MQ file      dependency target name (quoted)
+          -MP           emit phony targets
+      
+          -f format     select output file format
+             bin                  Flat raw binary (MS-DOS, embedded, ...) [default]
+             ith                  Intel Hex encoded flat binary
+             srec                 Motorola S-records encoded flat binary
+             aout                 Linux a.out
+             aoutb                NetBSD/FreeBSD a.out
+             coff                 COFF (i386) (DJGPP, some Unix variants)
+             elf32                ELF32 (i386) (Linux, most Unix variants)
+             elf64                ELF64 (x86-64) (Linux, most Unix variants)
+             elfx32               ELFx32 (ELF32 for x86-64) (Linux)
+             as86                 as86 (bin86/dev86 toolchain)
+             obj                  Intel/Microsoft OMF (MS-DOS, OS/2, Win16)
+             win32                Microsoft extended COFF for Win32 (i386)
+             win64                Microsoft extended COFF for Win64 (x86-64)
+             ieee                 IEEE-695 (LADsoft variant) object file format
+             macho32              Mach-O i386 (Mach, including MacOS X and variants)
+             macho64              Mach-O x86-64 (Mach, including MacOS X and variants)
+             dbg                  Trace of all info passed to output stage
+             elf                  Legacy alias for "elf32"
+             macho                Legacy alias for "macho32"
+             win                  Legacy alias for "win32"
+      
+          -g            generate debugging information
+          -F format     select a debugging format (output format dependent)
+          -gformat      same as -g -F format
+             elf32:     dwarf     ELF32 (i386) dwarf (newer) [default]
+                        stabs     ELF32 (i386) stabs (older)
+             elf64:     dwarf     ELF64 (x86-64) dwarf (newer) [default]
+                        stabs     ELF64 (x86-64) stabs (older)
+             elfx32:    dwarf     ELFx32 (x86-64) dwarf (newer) [default]
+                        stabs     ELFx32 (x86-64) stabs (older)
+             obj:       borland   Borland Debug Records [default]
+             win32:     cv8       Codeview 8+ [default]
+             win64:     cv8       Codeview 8+ [default]
+             ieee:      ladsoft   LADsoft Debug Records [default]
+             macho32:   dwarf     Mach-O i386 dwarf for Darwin/MacOS [default]
+             macho64:   dwarf     Mach-O x86-64 dwarf for Darwin/MacOS [default]
+             dbg:       debug     Trace of all info passed to debug stage [default]
+      
+          -l listfile   write listing to a list file
+          -Lflags...    add optional information to the list file
+             -Lb        show builtin macro packages (standard and %use)
+             -Ld        show byte and repeat counts in decimal, not hex
+             -Le        show the preprocessed output
+             -Lf        ignore .nolist (force output)
+             -Lm        show multi-line macro calls with expanded parameters
+             -Lp        output a list file every pass, in case of errors
+             -Ls        show all single-line macro definitions
+             -Lw        flush the output after every line (very slow!)
+             -L+        enable all listing options except -Lw (very verbose!)
+      
+          -Oflags...    optimize opcodes, immediates and branch offsets
+             -O0        no optimization
+             -O1        minimal optimization
+             -Ox        multipass optimization (default)
+             -Ov        display the number of passes executed at the end
+          -t            assemble in limited SciTech TASM compatible mode
+      
+          -E (or -e)    preprocess only (writes output to stdout by default)
+          -a            don't preprocess (assemble only)
+          -Ipath        add a pathname to the include file path
+          -Pfile        pre-include a file (also --include)
+          -Dmacro[=str] pre-define a macro
+          -Umacro       undefine a macro
+         --pragma str   pre-executes a specific %%pragma
+         --before str   add line (usually a preprocessor statement) before the input
+         --no-line      ignore %line directives in input
+      
+         --prefix str   prepend the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --suffix str   append the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --lprefix str  prepend the given string to local symbols
+         --lpostfix str append the given string to local symbols
+      
+         --reproducible attempt to produce run-to-run identical output
+      
+          -w+x          enable warning x (also -Wx)
+          -w-x          disable warning x (also -Wno-x)
+          -w[+-]error   promote all warnings to errors (also -Werror)
+          -w[+-]error=x promote warning x to errors (also -Werror=x)
+             all                  all possible warnings
+             db-empty             no operand for data declaration [on]
+             ea                   all warnings prefixed with "ea-"
+             ea-absolute          absolute address cannot be RIP-relative [on]
+             ea-dispsize          displacement size ignored on absolute address [on]
+             float                all warnings prefixed with "float-"
+             float-denorm         floating point denormal [off]
+             float-overflow       floating point overflow [on]
+             float-toolong        too many digits in floating-point number [on]
+             float-underflow      floating point underflow [off]
+             forward              forward reference may have unpredictable results [on]
+             label                all warnings prefixed with "label-"
+             label-orphan         labels alone on lines without trailing : [on]
+             label-redef          label redefined to an identical value [off]
+             label-redef-late     label (re)defined during code generation [error]
+             number-overflow      numeric constant does not fit [on]
+             obsolete             all warnings prefixed with "obsolete-"
+             obsolete-nop         instruction obsolete and is a noop on the target CPU [on]
+             obsolete-removed     instruction obsolete and removed on the target CPU [on]
+             obsolete-valid       instruction obsolete but valid on the target CPU [on]
+             phase                phase error during stabilization [off]
+             pp                   all warnings prefixed with "pp-"
+             pp-else              all warnings prefixed with "pp-else-"
+             pp-else-elif         %elif after %else [on]
+             pp-else-else         %else after %else [on]
+             pp-empty-braces      empty %{} construct [on]
+             pp-environment       nonexistent environment variable [on]
+             pp-macro             all warnings prefixed with "pp-macro-"
+             pp-macro-def         all warnings prefixed with "pp-macro-def-"
+             pp-macro-def-case-single single-line macro defined both case sensitive and insensitive [on]
+             pp-macro-def-greedy-single single-line macro [on]
+             pp-macro-def-param-single single-line macro defined with and without parameters [error]
+             pp-macro-defaults    macros with more default than optional parameters [on]
+             pp-macro-params      all warnings prefixed with "pp-macro-params-"
+             pp-macro-params-legacy improperly calling multi-line macro for legacy support [on]
+             pp-macro-params-multi multi-line macro calls with wrong parameter count [on]
+             pp-macro-params-single single-line macro calls with wrong parameter count [on]
+             pp-macro-redef-multi redefining multi-line macro [on]
+             pp-open              all warnings prefixed with "pp-open-"
+             pp-open-braces       unterminated %{...} [on]
+             pp-open-brackets     unterminated %[...] [on]
+             pp-open-string       unterminated string [on]
+             pp-rep-negative      regative %rep count [on]
+             pp-sel-range         %sel() argument out of range [on]
+             pp-trailing          trailing garbage ignored [on]
+             pragma               all warnings prefixed with "pragma-"
+             pragma-bad           malformed %pragma [off]
+             pragma-empty         empty %pragma directive [off]
+             pragma-na            %pragma not applicable to this compilation [off]
+             pragma-unknown       unknown %pragma facility or directive [off]
+             prefix               all warnings prefixed with "prefix-"
+             prefix-bnd           invalid BND prefix [on]
+             prefix-hle           invalid HLE prefix [on]
+             prefix-lock          all warnings prefixed with "prefix-lock-"
+             prefix-lock-error    LOCK prefix on unlockable instruction [on]
+             prefix-lock-xchg     superfluous LOCK prefix on XCHG instruction [on]
+             prefix-opsize        invalid operand size prefix [on]
+             prefix-seg           segment prefix ignored in 64-bit mode [on]
+             ptr                  non-NASM keyword used in other assemblers [on]
+             regsize              register size specification ignored [on]
+             reloc                all warnings prefixed with "reloc-"
+             reloc-abs            all warnings prefixed with "reloc-abs-"
+             reloc-abs-byte       8-bit absolute section-crossing relocation [off]
+             reloc-abs-dword      32-bit absolute section-crossing relocation [off]
+             reloc-abs-qword      64-bit absolute section-crossing relocation [off]
+             reloc-abs-word       16-bit absolute section-crossing relocation [off]
+             reloc-rel            all warnings prefixed with "reloc-rel-"
+             reloc-rel-byte       8-bit relative section-crossing relocation [off]
+             reloc-rel-dword      32-bit relative section-crossing relocation [off]
+             reloc-rel-qword      64-bit relative section-crossing relocation [off]
+             reloc-rel-word       16-bit relative section-crossing relocation [off]
+             unknown-warning      unknown warning in -W/-w or warning directive [off]
+             user                 %warning directives [on]
+             warn-stack-empty     warning stack empty [on]
+             zeroing              RESx in initialized section becomes zero [on]
+             zext-reloc           relocation zero-extended to match output format [on]
+             other                any warning not specifically mentioned above [on]
+      
+         --limit-X val  set execution limit X
+             passes               total number of passes [unlimited]
+             stalled-passes       number of passes without forward progress [1000]
+             macro-levels         levels of macro expansion [10000]
+             macro-tokens         tokens processed during single-lime macro expansion [10000000]
+             mmacros              multi-line macros before final return [100000]
+             rep                  %rep count [1000000]
+             eval                 expression evaluation descent [8192]
+             lines                total source lines processed [2000000000]
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+      NASM version 2.16.03
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
+      nasm: fatal: no input file specified
+      Type /usr/bin/nasm -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      nasm: fatal: no input file specified
+      Type /usr/bin/nasm -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/CMakeDetermineASM_NASMCompiler.cmake:4 (include)"
+      - "common/CMakeLists.txt:78 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is NASM using "-v" matched "(NASM version)":
+      NASM version 2.16.03
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "common/CMakeLists.txt:217 (check_symbol_exists)"
+    checks:
+      - "Looking for strtok_r"
+    directories:
+      source: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9"
+      binary: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong"
+      CMAKE_MODULE_PATH: "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/cmake;"
+    buildResult:
+      variable: "HAVE_STRTOK_R"
+      cached: true
+      stdout: |
+        Change Dir: '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aa034/fast
+        gmake[1]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aa034.dir/build.make CMakeFiles/cmTC_aa034.dir/build
+        gmake[2]: Entering directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9'
+        Building C object CMakeFiles/cmTC_aa034.dir/CheckSymbolExists.c.obj
+        /usr/bin/i686-w64-mingw32-gcc   -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -o CMakeFiles/cmTC_aa034.dir/CheckSymbolExists.c.obj -c /home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9/CheckSymbolExists.c
+        Linking C executable cmTC_aa034.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa034.dir/link.txt --verbose=1
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_aa034.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_aa034.dir/objects.a @CMakeFiles/cmTC_aa034.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-gcc -I/home/harshit/Swift/build-win-x86/contrib/include -std=gnu99 -mfpmath=sse -msse2 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -mno-ms-bitfields  -L/home/harshit/Swift/build-win-x86/contrib/lib -fstack-protector-strong  -Wl,--whole-archive CMakeFiles/cmTC_aa034.dir/objects.a -Wl,--no-whole-archive -o cmTC_aa034.exe -Wl,--out-implib,libcmTC_aa034.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_aa034.dir/linkLibs.rsp
+        gmake[2]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9'
+        gmake[1]: Leaving directory '/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/CMakeFiles/CMakeScratch/TryCompile-kAZgt9'
+        
+      exitCode: 0
+...

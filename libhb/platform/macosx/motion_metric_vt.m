@@ -60,6 +60,8 @@ static int hb_motion_metric_vt_init(hb_motion_metric_object_t *metric,
     if (pv->mtl == NULL)
     {
         hb_error("motion_metric_vt: failed to create Metal device");
+        free(pv);
+        metric->private_data = NULL;
         return -1;
     }
 
@@ -81,6 +83,7 @@ static int hb_motion_metric_vt_init(hb_motion_metric_object_t *metric,
     if (pv->result == nil)
     {
         hb_error("motion_metric_vt: failed to create buffer");
+        hb_motion_metric_vt_close(metric);
         return -1;
     }
 
@@ -130,6 +133,13 @@ static float motion_metric(hb_motion_metric_private_t *pv, hb_buffer_t *a, hb_bu
 
     CVMetalTextureRef ref_a = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_a, 0, channels, format);
     CVMetalTextureRef ref_b = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_b, 0, channels, format);
+
+    if (ref_a == NULL || ref_b == NULL)
+    {
+        if (ref_a) CFRelease(ref_a);
+        if (ref_b) CFRelease(ref_b);
+        goto fail;
+    }
 
     id<MTLTexture> tex_a = CVMetalTextureGetTexture(ref_a);
     id<MTLTexture> tex_b = CVMetalTextureGetTexture(ref_b);

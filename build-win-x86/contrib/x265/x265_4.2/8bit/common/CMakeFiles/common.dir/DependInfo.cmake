@@ -1,0 +1,106 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "ASM_NASM"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_ASM_NASM
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/blockcopy8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/blockcopy8.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/const-a.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/const-a.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/cpu-a.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/cpu-a.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/dct8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/dct8.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/h-ipfilter8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/h-ipfilter8.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/intrapred8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/intrapred8.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/intrapred8_allangs.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/intrapred8_allangs.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/ipfilter8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/ipfilter8.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/loopfilter.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/loopfilter.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/mc-a.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/mc-a.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/mc-a2.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/mc-a2.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/pixel-32.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/pixel-32.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/pixel-a.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/pixel-a.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/pixel-util8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/pixel-util8.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/pixeladd8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/pixeladd8.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/sad-a.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/sad-a.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/seaintegral.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/seaintegral.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/ssd-a.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/ssd-a.asm.obj"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/v4-ipfilter8.asm" "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/8bit/common/CMakeFiles/common.dir/x86/v4-ipfilter8.asm.obj"
+  )
+set(CMAKE_ASM_NASM_COMPILER_ID "NASM")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_ASM_NASM
+  "ENABLE_ASSEMBLY"
+  "EXPORT_C_API=1"
+  "HAVE_INT_TYPES_H=1"
+  "HIGH_BIT_DEPTH=0"
+  "X265_ARCH_X86=1"
+  "X265_DEPTH=8"
+  "X265_NS=x265"
+  "_WIN32_WINNT=_WIN32_WINNT_WIN7"
+  "__STDC_LIMIT_MACROS=1"
+  )
+
+# The include file search paths:
+set(CMAKE_ASM_NASM_TARGET_INCLUDE_PATH
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/."
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/encoder"
+  "."
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/bitstream.cpp" "common/CMakeFiles/common.dir/bitstream.cpp.obj" "gcc" "common/CMakeFiles/common.dir/bitstream.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/common.cpp" "common/CMakeFiles/common.dir/common.cpp.obj" "gcc" "common/CMakeFiles/common.dir/common.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/constants.cpp" "common/CMakeFiles/common.dir/constants.cpp.obj" "gcc" "common/CMakeFiles/common.dir/constants.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/cpu.cpp" "common/CMakeFiles/common.dir/cpu.cpp.obj" "gcc" "common/CMakeFiles/common.dir/cpu.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/cudata.cpp" "common/CMakeFiles/common.dir/cudata.cpp.obj" "gcc" "common/CMakeFiles/common.dir/cudata.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/dct.cpp" "common/CMakeFiles/common.dir/dct.cpp.obj" "gcc" "common/CMakeFiles/common.dir/dct.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/deblock.cpp" "common/CMakeFiles/common.dir/deblock.cpp.obj" "gcc" "common/CMakeFiles/common.dir/deblock.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/frame.cpp" "common/CMakeFiles/common.dir/frame.cpp.obj" "gcc" "common/CMakeFiles/common.dir/frame.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/framedata.cpp" "common/CMakeFiles/common.dir/framedata.cpp.obj" "gcc" "common/CMakeFiles/common.dir/framedata.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/intrapred.cpp" "common/CMakeFiles/common.dir/intrapred.cpp.obj" "gcc" "common/CMakeFiles/common.dir/intrapred.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/ipfilter.cpp" "common/CMakeFiles/common.dir/ipfilter.cpp.obj" "gcc" "common/CMakeFiles/common.dir/ipfilter.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/loopfilter.cpp" "common/CMakeFiles/common.dir/loopfilter.cpp.obj" "gcc" "common/CMakeFiles/common.dir/loopfilter.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/lowpassdct.cpp" "common/CMakeFiles/common.dir/lowpassdct.cpp.obj" "gcc" "common/CMakeFiles/common.dir/lowpassdct.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/lowres.cpp" "common/CMakeFiles/common.dir/lowres.cpp.obj" "gcc" "common/CMakeFiles/common.dir/lowres.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/md5.cpp" "common/CMakeFiles/common.dir/md5.cpp.obj" "gcc" "common/CMakeFiles/common.dir/md5.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/param.cpp" "common/CMakeFiles/common.dir/param.cpp.obj" "gcc" "common/CMakeFiles/common.dir/param.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/piclist.cpp" "common/CMakeFiles/common.dir/piclist.cpp.obj" "gcc" "common/CMakeFiles/common.dir/piclist.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/picyuv.cpp" "common/CMakeFiles/common.dir/picyuv.cpp.obj" "gcc" "common/CMakeFiles/common.dir/picyuv.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/pixel.cpp" "common/CMakeFiles/common.dir/pixel.cpp.obj" "gcc" "common/CMakeFiles/common.dir/pixel.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/predict.cpp" "common/CMakeFiles/common.dir/predict.cpp.obj" "gcc" "common/CMakeFiles/common.dir/predict.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/primitives.cpp" "common/CMakeFiles/common.dir/primitives.cpp.obj" "gcc" "common/CMakeFiles/common.dir/primitives.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/quant.cpp" "common/CMakeFiles/common.dir/quant.cpp.obj" "gcc" "common/CMakeFiles/common.dir/quant.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/ringmem.cpp" "common/CMakeFiles/common.dir/ringmem.cpp.obj" "gcc" "common/CMakeFiles/common.dir/ringmem.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/scaler.cpp" "common/CMakeFiles/common.dir/scaler.cpp.obj" "gcc" "common/CMakeFiles/common.dir/scaler.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/scalinglist.cpp" "common/CMakeFiles/common.dir/scalinglist.cpp.obj" "gcc" "common/CMakeFiles/common.dir/scalinglist.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/shortyuv.cpp" "common/CMakeFiles/common.dir/shortyuv.cpp.obj" "gcc" "common/CMakeFiles/common.dir/shortyuv.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/slice.cpp" "common/CMakeFiles/common.dir/slice.cpp.obj" "gcc" "common/CMakeFiles/common.dir/slice.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/temporalfilter.cpp" "common/CMakeFiles/common.dir/temporalfilter.cpp.obj" "gcc" "common/CMakeFiles/common.dir/temporalfilter.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/threading.cpp" "common/CMakeFiles/common.dir/threading.cpp.obj" "gcc" "common/CMakeFiles/common.dir/threading.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/threadpool.cpp" "common/CMakeFiles/common.dir/threadpool.cpp.obj" "gcc" "common/CMakeFiles/common.dir/threadpool.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/vec/dct-sse3.cpp" "common/CMakeFiles/common.dir/vec/dct-sse3.cpp.obj" "gcc" "common/CMakeFiles/common.dir/vec/dct-sse3.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/vec/dct-sse41.cpp" "common/CMakeFiles/common.dir/vec/dct-sse41.cpp.obj" "gcc" "common/CMakeFiles/common.dir/vec/dct-sse41.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/vec/dct-ssse3.cpp" "common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.obj" "gcc" "common/CMakeFiles/common.dir/vec/dct-ssse3.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/vec/vec-primitives.cpp" "common/CMakeFiles/common.dir/vec/vec-primitives.cpp.obj" "gcc" "common/CMakeFiles/common.dir/vec/vec-primitives.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/version.cpp" "common/CMakeFiles/common.dir/version.cpp.obj" "gcc" "common/CMakeFiles/common.dir/version.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/wavefront.cpp" "common/CMakeFiles/common.dir/wavefront.cpp.obj" "gcc" "common/CMakeFiles/common.dir/wavefront.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/winxp.cpp" "common/CMakeFiles/common.dir/winxp.cpp.obj" "gcc" "common/CMakeFiles/common.dir/winxp.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/x86/asm-primitives.cpp" "common/CMakeFiles/common.dir/x86/asm-primitives.cpp.obj" "gcc" "common/CMakeFiles/common.dir/x86/asm-primitives.cpp.obj.d"
+  "/home/harshit/Swift/build-win-x86/contrib/x265/x265_4.2/source/common/yuv.cpp" "common/CMakeFiles/common.dir/yuv.cpp.obj" "gcc" "common/CMakeFiles/common.dir/yuv.cpp.obj.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
