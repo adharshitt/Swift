@@ -170,6 +170,10 @@ static hb_buffer_t * filter_frame(hb_filter_private_t *pv, hb_buffer_t *in)
 
     CVPixelBufferRef cv_dest = NULL;
     CVPixelBufferRef cv_src = hb_cv_get_pixel_buffer(in);
+    CVMetalTextureRef  src[3] = { NULL };
+    MTLPixelFormat  format[3] = { 0 };
+    id<MTLTexture> tex_src[3] = { NULL };
+    int channels;
 
     if (cv_src == NULL)
     {
@@ -183,11 +187,6 @@ static hb_buffer_t * filter_frame(hb_filter_private_t *pv, hb_buffer_t *in)
         hb_log("grayscale_vt: CVPixelBufferPoolCreatePixelBuffer failed");
         goto fail;
     }
-
-    CVMetalTextureRef  src[3] = { NULL };
-    MTLPixelFormat  format[3] = { 0 };
-    id<MTLTexture> tex_src[3] = { NULL };
-    int channels;
 
     for (int i = 0; i < pv->desc->nb_components; i++)
     {
@@ -204,6 +203,10 @@ static hb_buffer_t * filter_frame(hb_filter_private_t *pv, hb_buffer_t *in)
         }
 
         src[i]     = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_src, i, channels, format[i]);
+        if (src[i] == NULL)
+        {
+            goto fail;
+        }
         tex_src[i] = CVMetalTextureGetTexture(src[i]);
     }
 
@@ -216,6 +219,10 @@ static hb_buffer_t * filter_frame(hb_filter_private_t *pv, hb_buffer_t *in)
         }
 
         CVMetalTextureRef dest = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_dest, i, channels, format[i]);
+        if (dest == NULL)
+        {
+            goto fail;
+        }
         id<MTLTexture> tex_dest = CVMetalTextureGetTexture(dest);
 
         call_kernel(pv, tex_dest, tex_src, i);
@@ -251,6 +258,13 @@ static hb_buffer_t * filter_frame(hb_filter_private_t *pv, hb_buffer_t *in)
     return out;
 
 fail:
+    for (int i = 0; i < 3; i++)
+    {
+        if (src[i] != NULL)
+        {
+            CFRelease(src[i]);
+        }
+    }
     if (out != NULL)
     {
         hb_buffer_close(&out);

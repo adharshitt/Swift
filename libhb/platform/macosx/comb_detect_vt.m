@@ -210,6 +210,8 @@ static int comb_detect_vt_init(hb_filter_object_t *filter,
     {
         [constant_values release];
         hb_error("comb_detect_vt: failed to create Metal device");
+        free(pv);
+        filter->private_data = NULL;
         return -1;
     }
 
@@ -222,16 +224,19 @@ static int comb_detect_vt_init(hb_filter_object_t *filter,
                                constant_values, pv->mtl->pipelines_count))
     {
         [constant_values release];
+        comb_detect_vt_close(filter);
         return -1;
     }
     if (hb_metal_add_pipeline(pv->mtl, "erode_mask", NULL, pv->mtl->pipelines_count))
     {
         [constant_values release];
+        comb_detect_vt_close(filter);
         return -1;
     }
     if (hb_metal_add_pipeline(pv->mtl, "dilate_mask", NULL, pv->mtl->pipelines_count))
     {
         [constant_values release];
+        comb_detect_vt_close(filter);
         return -1;
     }
     char *check_combing_name = pv->mode & MODE_FILTER ? "check_filtered_combing_mask" : "check_combing_mask";
@@ -253,11 +258,13 @@ static int comb_detect_vt_init(hb_filter_object_t *filter,
     if (hb_metal_add_pipeline(pv->mtl,check_combing_name, constant_values, pv->mtl->pipelines_count))
     {
         [constant_values release];
+        comb_detect_vt_close(filter);
         return -1;
     }
     if (hb_metal_add_pipeline(pv->mtl, "apply_mask", constant_values, pv->mtl->pipelines_count))
     {
         [constant_values release];
+        comb_detect_vt_close(filter);
         return -1;
     }
 
@@ -394,6 +401,9 @@ static int analyze_frame(hb_filter_private_t *pv, hb_buffer_t **out)
     }
 
     CVMetalTextureRef dest = NULL;
+    CVMetalTextureRef prev = NULL;
+    CVMetalTextureRef cur  = NULL;
+    CVMetalTextureRef next = NULL;
     id<MTLTexture> tex_dest = nil;
 
     if (pv->mode & MODE_MASK || pv->mode & MODE_COMPOSITE)
@@ -405,12 +415,26 @@ static int analyze_frame(hb_filter_private_t *pv, hb_buffer_t **out)
             goto fail;
         }
         dest = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_dest, 0, channels, format);
+        if (dest == NULL)
+        {
+            goto fail;
+        }
         tex_dest = CVMetalTextureGetTexture(dest);
     }
 
-    CVMetalTextureRef prev = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_prev, 0, channels, format);
-    CVMetalTextureRef cur  = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_cur,  0, channels, format);
-    CVMetalTextureRef next = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_next, 0, channels, format);
+    prev = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_prev, 0, channels, format);
+    cur  = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_cur,  0, channels, format);
+    next = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_next, 0, channels, format);
+
+    if (prev == NULL || cur == NULL || next == NULL)
+    {
+        if (prev) CFRelease(prev);
+        if (cur)  CFRelease(cur);
+        if (next) CFRelease(next);
+        if (dest) CFRelease(dest);
+        if (cv_dest) CVPixelBufferRelease(cv_dest);
+        goto fail;
+    }
 
     id<MTLTexture> tex_prev = CVMetalTextureGetTexture(prev);
     id<MTLTexture> tex_cur  = CVMetalTextureGetTexture(cur);

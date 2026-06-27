@@ -130,6 +130,7 @@ static int crop_scale_vt_init(hb_filter_object_t *filter,
     if (err != noErr)
     {
         hb_log("cropscale_vt: err=%"PRId64"", (int64_t)err);
+        crop_scale_vt_close(filter);
         return err;
     }
 
@@ -175,6 +176,7 @@ static int crop_scale_vt_init(hb_filter_object_t *filter,
     if (err != noErr)
     {
         hb_log("cropscale_vt: kVTPixelTransferPropertyKey_DestinationCleanAperture failed");
+        crop_scale_vt_close(filter);
         return err;
     }
 
@@ -194,6 +196,7 @@ static int crop_scale_vt_init(hb_filter_object_t *filter,
     if (pv->pool == NULL)
     {
         hb_log("cropscale_vt: CVPixelBufferPoolCreate failed");
+        crop_scale_vt_close(filter);
         return -1;
     }
 
@@ -203,6 +206,7 @@ static int crop_scale_vt_init(hb_filter_object_t *filter,
     if (err != noErr)
     {
         hb_log("cropscale_vt: kVTPixelTransferPropertyKey_DownsamplingMode failed");
+        crop_scale_vt_close(filter);
         return err;
     }
 
@@ -287,6 +291,7 @@ static int crop_scale_vt_work(hb_filter_object_t *filter,
     if (err != noErr)
     {
         hb_log("cropscale_vt: VTPixelTransferSessionTransferImage failed");
+        CVPixelBufferRelease(dest_buf);
         return HB_FILTER_FAILED;
     }
 

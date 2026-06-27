@@ -52,6 +52,12 @@ hb_filter_object_t hb_filter_rotate_vt =
 static int rotate_vt_init(hb_filter_object_t *filter,
                           hb_filter_init_t   *init)
 {
+    if (!__builtin_available(macOS 13, *))
+    {
+        hb_error("rotate_vt: VTPixelRotationSession requires macOS 13 or later");
+        return -1;
+    }
+
     filter->private_data = calloc(sizeof(struct hb_filter_private_s), 1);
     if (filter->private_data == NULL)
     {
@@ -106,6 +112,8 @@ static int rotate_vt_init(hb_filter_object_t *filter,
         if (err != noErr)
         {
             hb_log("rotate_vt: err=%"PRId64"", (int64_t)err);
+            free(pv);
+            filter->private_data = NULL;
             return err;
         }
 
@@ -135,6 +143,7 @@ static int rotate_vt_init(hb_filter_object_t *filter,
     if (pv->pool == NULL)
     {
         hb_log("rotate_vt: CVPixelBufferPoolCreate failed");
+        rotate_vt_close(filter);
         return -1;
     }
 
@@ -226,6 +235,7 @@ static int rotate_vt_work(hb_filter_object_t *filter,
         if (err != noErr)
         {
             hb_log("rotate_vt: VTPixelRotationSessionRotateImage failed");
+            CVPixelBufferRelease(dest_buf);
             return HB_FILTER_FAILED;
         }
     }

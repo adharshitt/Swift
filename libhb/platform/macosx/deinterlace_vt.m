@@ -163,6 +163,8 @@ static int deinterlace_vt_init(hb_filter_object_t *filter,
     if (pv->mtl == NULL)
     {
         hb_error("deinterlace_vt: failed to create Metal device");
+        free(pv);
+        filter->private_data = NULL;
         return -1;
     }
 
@@ -279,6 +281,15 @@ static hb_buffer_t * filter_frame(hb_filter_private_t *pv, int parity, int tff)
         CVMetalTextureRef cur  = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_cur,  i, channels, format);
         CVMetalTextureRef next = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_next, i, channels, format);
         CVMetalTextureRef dest = hb_metal_create_texture_from_pixbuf(pv->mtl->cache, cv_dest, i, channels, format);
+
+        if (prev == NULL || cur == NULL || next == NULL || dest == NULL)
+        {
+            if (prev) CFRelease(prev);
+            if (cur)  CFRelease(cur);
+            if (next) CFRelease(next);
+            if (dest) CFRelease(dest);
+            goto fail;
+        }
 
         id<MTLTexture> tex_prev = CVMetalTextureGetTexture(prev);
         id<MTLTexture> tex_cur  = CVMetalTextureGetTexture(cur);

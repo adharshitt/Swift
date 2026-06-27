@@ -101,6 +101,8 @@ static int hb_blend_vt_init(hb_blend_object_t *object,
     if (pv->mtl == NULL)
     {
         hb_error("blend_vt: failed to create Metal device");
+        free(pv);
+        object->private_data = NULL;
         return -1;
     }
 
@@ -122,6 +124,7 @@ static int hb_blend_vt_init(hb_blend_object_t *object,
     {
         hb_error("blend_vt: failed to create Metal pipeline");
         [constant_values release];
+        hb_blend_vt_close(object);
         return -1;
     }
 
@@ -134,6 +137,7 @@ static int hb_blend_vt_init(hb_blend_object_t *object,
     {
         hb_error("blend_vt: failed to create Metal pipeline");
         [constant_values release];
+        hb_blend_vt_close(object);
         return -1;
     }
 
@@ -164,6 +168,8 @@ static int hb_blend_vt_init(hb_blend_object_t *object,
     if (pv->chroma_coeffs == nil)
     {
         hb_error("blend_vt: failed to create Metal buffers");
+        hb_blend_vt_close(object);
+        return -1;
     }
 
     hb_compute_chroma_smoothing_coefficient(pv->chroma_coeffs.contents,
